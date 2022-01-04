@@ -14,6 +14,13 @@ namespace GeekBrains.OOP.Lesson2.Task1
             bankBill.Balance = 1111;
             bankBill.BillNumber = 22222;
             bankBill.CurrentBillTypes = BankBill.BillTypes.CompanyBill;
+            
+            var balance = bankBill.FromDeposite(11);
+            Console.WriteLine(balance);
+
+            balance = bankBill.ToDeposite(1100);
+            Console.WriteLine(balance);
+
 
             Console.ReadKey();
         }

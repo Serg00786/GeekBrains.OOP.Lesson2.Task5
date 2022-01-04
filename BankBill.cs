@@ -22,5 +22,23 @@ namespace GeekBrains.OOP.Lesson2.Task1
             get { return _BillTypes; }
             set { _BillTypes = value; }
         }
+
+        internal double FromDeposite(double IncomingSum)
+        {
+            if (Balance > IncomingSum)
+            {
+
+                return Balance-IncomingSum;
+            }
+            else
+            {
+                return Balance;
+            }
+        }
+
+        internal double ToDeposite(double IncomingSum)
+        {
+            return Balance+IncomingSum;
+        }
     }
 }
